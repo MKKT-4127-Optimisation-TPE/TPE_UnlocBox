@@ -19,7 +19,7 @@ Ce projet est organisé en deux parties principales :
 │   ├── 22T2829Ivana-KELODJOU
     ├── 22U2080Martin-TSEMEGNE
     ├── 22U2118Richel-KEMBOU   
-│   └── 22U2194Lea-MEFFOA
+│   └── 22U2194Lea-MEFFO
 ├── presentation.pdf           # Contient les sources LaTeX et le PDF de la présentation
 ├── .gitignore
 └── README.md
