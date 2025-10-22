@@ -95,4 +95,65 @@ Ce projet a été réalisé par :
 *   **KELODJOU Ivana** (22T2894)
 *   **TSEMEGNE Martin** (22U2080)
 
+Bien sûr. Voici un petit fichier `README.md` expliquant clairement les étapes pour lancer votre code MATLAB sur le Débruitage TV avec UNLOCBOX.
+
+# Lancement du Code MATLAB (UNLOCBOX - demo.m)
+
+# Projet UNLocBoX — Lancement du projet MATLAB
+
+## 1. Installation du toolbox UNLocBoX
+
+1. Ouvrir un terminal et exécuter :
+     bash
+   cd ~/Documents/MATLAB
+   git clone https://github.com/epfl-lts2/unlocbox.git
+
+
+> (Si `git` n’est pas installé, fais `sudo apt install git`)
+
+2. Vérifier que le dossier `unlocbox` contient bien les sous-dossiers :
+
+   ```
+    prox/  solver/  utils/  
+   ```
+
+---
+
+## 2. Configuration dans MATLAB
+
+1. Lancer MATLAB.
+
+2. Ajouter le chemin du toolbox :
+
+   ```matlab
+   addpath(genpath('/home/kednai/Documents/MATLAB/unlocbox'));
+   init_unlocbox;
+   ```
+
+   > Si tu veux que MATLAB le fasse automatiquement à chaque démarrage, crée un fichier :
+   >
+   > `~/Documents/MATLAB/startup.m` contenant :
+   >
+   > ```matlab
+   > addpath(genpath('/home/kednai/Documents/MATLAB/unlocbox'));
+   > init_unlocbox;
+   > ```
+
+
+## 3\. Exécution du Code
+
+1.  **Ouvrir le Script** : Ouvrez le fichier `demo.m` dans l'éditeur MATLAB.
+2.  **Exécuter** :
+      * Vous pouvez cliquer sur le bouton **Run** (Exécuter) dans l'onglet de l'éditeur.
+      * Ou, dans la fenêtre de commandes, naviguez jusqu'au répertoire du script et tapez :
+        demo
+
+### Sortie Attendue
+
+Après l'exécution, vous devriez voir :
+
+  * Les messages de progression de l'algorithme **FORWARD\_BACKWARD** dans la fenêtre de commandes.
+  * L'affichage des résultats de la **MSE** (Erreur Quadratique Moyenne) dans la console.
+  * Une fenêtre graphique affichant l'image bruitée et l'image débruitée pour comparaison.
+
 ---
